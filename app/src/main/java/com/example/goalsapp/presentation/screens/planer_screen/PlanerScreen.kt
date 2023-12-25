@@ -1,7 +1,8 @@
-package com.example.goalsapp.presentation.planer_screen
+package com.example.goalsapp.presentation.screens.planer_screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.scrollable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -13,11 +14,13 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.unit.dp
-import com.example.goalsapp.presentation.planer_screen.components.PlanerHeader
+import com.example.goalsapp.presentation.components.FloatingButton
+import com.example.goalsapp.presentation.screens.planer_screen.components.PlanerHeader
 
 @Composable
 fun PlanerScreen(
@@ -48,11 +51,17 @@ fun PlanerScreen(
                         bottomEnd = 0.dp
                     )
                 )
-                .background(MaterialTheme.colorScheme.onPrimaryContainer)
+                .background(MaterialTheme.colorScheme.onPrimaryContainer),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
             item {
                 PlanerHeader()
             }
         }
+
+        FloatingButton(action = ::test)
     }
 }
+
+fun test() {}

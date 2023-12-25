@@ -5,8 +5,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.goalsapp.presentation.goals_screen.GoalsScreen
-import com.example.goalsapp.presentation.planer_screen.PlanerScreen
+import com.example.goalsapp.presentation.screens.goals_screen.GoalsScreen
+import com.example.goalsapp.presentation.screens.planer_screen.PlanerScreen
 
 @Composable
 fun Navigation() {
