@@ -3,4 +3,7 @@
 
     <string name="label_goals_text">Goals</string>
     <string name="label_planer_text">Planer</string>
+
+    <string name="header_text">Planer</string>
+    <string name="header_hint_text">To complete task - mark it</string>
 </resources>
