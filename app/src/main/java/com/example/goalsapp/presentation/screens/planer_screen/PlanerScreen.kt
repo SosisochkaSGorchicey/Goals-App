@@ -1,17 +1,14 @@
 package com.example.goalsapp.presentation.screens.planer_screen
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,11 +18,15 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.unit.dp
 import com.example.goalsapp.presentation.components.FloatingButton
 import com.example.goalsapp.presentation.screens.planer_screen.components.PlanerHeader
+import com.example.goalsapp.presentation.screens.planer_screen.components.TaskWithSwiping
 
 @Composable
 fun PlanerScreen(
     innerPadding: PaddingValues
 ) {
+
+    val listOfTasks = listOf("1", "2")
+
     Box(
         modifier = Modifier
             .padding(innerPadding)
@@ -57,6 +58,10 @@ fun PlanerScreen(
         ) {
             item {
                 PlanerHeader()
+            }
+
+            items(listOfTasks) { task ->
+                TaskWithSwiping(task = task)
             }
         }
 
