@@ -34,7 +34,7 @@ fun BottomBar(
                     Icon(
                         modifier = Modifier
                             .size(32.dp)
-                            .padding(bottom = 4.dp),
+                            .padding(bottom = 4.dp, top = 6.dp),
                         imageVector = ImageVector.vectorResource(screen.iconRes),
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onPrimaryContainer

@@ -8,7 +8,8 @@ private val LightColorScheme = lightColorScheme(
     primaryContainer = blue,
     onPrimaryContainer = white,
     secondaryContainer = darkBlue,
-    tertiaryContainer = lightBlue
+    tertiaryContainer = lightBlue,
+    inverseSurface = red
 )
 
 @Composable

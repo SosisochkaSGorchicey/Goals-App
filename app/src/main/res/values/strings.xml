@@ -7,4 +7,20 @@
     <string name="planer_header_text">Planer</string>
     <string name="goals_header_text">Goals</string>
     <string name="planer_header_hint_text">To complete task - mark it</string>
+
+    <string name="challenge_goal_and_value">Goal: %1$d Adding value: %2$d</string>
+    <string name="delete_dialog_text">Are you sure you want to delete this challenge?</string>
+    <string name="delete_dialog_confirm">Delete</string>
+    <string name="delete_dialog_dismiss">No</string>
+    <string name="tittle_add_task">Add new task</string>
+    <string name="tittle_add_goal">Add new goal</string>
+    <string name="button_add_task_text">Add</string>
+
+    <string name="title_hint">Title</string>
+    <string name="text_hint">Goal description</string>
+    <string name="goal_hint">Goal value</string>
+    <string name="goal_min_value_hint">Added value</string>
+
+    <string name="snackbar_fields_text">Fill in all the fields</string>
+    <string name="snackbar_numbers_text">The numbers must be integers</string>
 </resources>

@@ -9,20 +9,21 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
 fun BoxScope.FloatingButton(
-    action: () -> Unit
+    showDialog: MutableState<Boolean>
 ) {
     FloatingActionButton(
         modifier = Modifier
             .align(Alignment.BottomEnd)
             .padding(12.dp),
         onClick = {
-            action()
+            showDialog.value = true
         },
         containerColor = MaterialTheme.colorScheme.primaryContainer,
         contentColor = MaterialTheme.colorScheme.onPrimaryContainer,

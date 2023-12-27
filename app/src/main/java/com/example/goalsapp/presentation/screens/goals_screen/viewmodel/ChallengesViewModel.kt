@@ -37,4 +37,23 @@ class ChallengesViewModel(
         }
     }
 
+    fun insertChallengeIntoDatabase(
+        title: String,
+        text: String,
+        iconKey: Int,
+        goalValue: Int,
+        addingValue: Int
+    ) {
+        viewModelScope.launch {
+            challengeRepository.insertChallengeIntoDatabase(
+                Challenge(
+                    title = title,
+                    text = text,
+                    iconKey = iconKey,
+                    goalValue = goalValue,
+                    addingValue = addingValue
+                )
+            )
+        }
+    }
 }
