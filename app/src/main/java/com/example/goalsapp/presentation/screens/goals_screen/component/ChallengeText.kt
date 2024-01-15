@@ -5,9 +5,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.sp
 import com.example.goalsapp.R
 import com.example.goalsapp.domain.model.Challenge
 
@@ -22,11 +19,13 @@ fun ChallengeText(
             color = MaterialTheme.colorScheme.onPrimaryContainer
         )
 
-        Text(
-            text = challenge.text,
-            style = MaterialTheme.typography.displayMedium,
-            color = MaterialTheme.colorScheme.onPrimaryContainer
-        )
+        if (challenge.text.isNotEmpty()) {
+            Text(
+                text = challenge.text,
+                style = MaterialTheme.typography.displayMedium,
+                color = MaterialTheme.colorScheme.onPrimaryContainer
+            )
+        }
 
         Text(
             text = stringResource(

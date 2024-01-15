@@ -33,11 +33,11 @@ fun DialogForGoalAdding(showDialog: MutableState<Boolean>) {
     }
 
     val goalText = remember {
-        mutableStateOf("")
+        mutableStateOf("10")
     }
 
     val addedValueText = remember {
-        mutableStateOf("")
+        mutableStateOf("1")
     }
 
     val selectedItem = rememberSaveable {

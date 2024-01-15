@@ -36,7 +36,7 @@ fun AddButton(
     Button(
         onClick = {
             when {
-                titleText.value.trim().isEmpty() || descriptionText.value.trim().isEmpty() -> {
+                titleText.value.trim().isEmpty() -> {
                     scope.launch {
                         Toast.makeText(context, context.getString(R.string.snackbar_fields_text), Toast.LENGTH_LONG).show()
                     }
